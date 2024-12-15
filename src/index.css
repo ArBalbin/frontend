@@ -1,0 +1,41 @@
+/* Hero section with green and black background */
+.hero-section {
+  background-color: #2f4f4f;  /* Dark green color for background */
+  color: white;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://www.w3schools.com/w3images/forest.jpg'); /* Replace with your own image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add overlay for better contrast between background and text */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Style the button for better visibility */
+.btn-primary {
+  background-color: #28a745;  /* Green button */
+  border-color: #28a745;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
